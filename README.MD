@@ -20,8 +20,8 @@ LOG_Token=
 I used logtail for the real time log processing:
 1. Create a logtail account
 2. Click Connect to a source
-3. Name Souce
-4. Select Platform for this project I used Node.js
+3. Name the Souce
+4. Select Platform, for this project I used Node.js
 5. Copy the token and paste it in the .env file
 5. Click live tail button to view incoming logs.
 [logtail](https://betterstack.com/logtail)
