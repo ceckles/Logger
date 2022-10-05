@@ -24,4 +24,4 @@ I used logtail for the real time log processing:
 4. Select Platform for this project I used Node.js
 5. Copy the token and paste it in the .env file
 5. Click live tail of your source from the list in center.
-[logtail](https://logtail.com/team/69197/tail)
+[logtail](https://betterstack.com/logtail)
