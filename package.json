@@ -1,0 +1,17 @@
+{
+  "name": "logger",
+  "version": "1.0.0",
+  "description": "logger demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "chad eckles",
+  "license": "ISC",
+  "dependencies": {
+    "@logtail/node": "^0.1.12",
+    "@logtail/winston": "^0.1.13",
+    "dotenv": "^16.0.3",
+    "winston": "^3.8.2"
+  }
+}
