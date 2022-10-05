@@ -14,6 +14,7 @@ LOCATION_ENV=prod
 LOG_Token=
 ```
 5. run `npm start` to start run basic of base error test.(after you sign up for logtail and get token)
+6. check local logs created in project root dir (combinedLog.log) and (error.log) / logtail for live logs
 
 
 # logtail
