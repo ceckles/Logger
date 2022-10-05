@@ -23,5 +23,5 @@ I used logtail for the real time log processing:
 3. Name Souce
 4. Select Platform for this project I used Node.js
 5. Copy the token and paste it in the .env file
-5. Click live tail of your source from the list in center.
+5. Click live tail button to view incoming logs.
 [logtail](https://betterstack.com/logtail)
