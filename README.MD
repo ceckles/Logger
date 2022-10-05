@@ -1,5 +1,5 @@
 # LOGGER
-A project I setup to testing out how to log, format and process event, errors etc... logs for debug and suport in a production and dev env with a live tail.
+A project I setup to testing out how to log, format and process event, errors etc... logs for debug and suport in a production and dev env with a live tail view with logtail which is a free log processing service.
 
 # Install
 this is a nodejs project so you need to have nodejs installed on your machine. for more info on how to install nodejs on your machine go to [nodejs.org](nodejs.org)
