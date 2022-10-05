@@ -8,7 +8,7 @@ this is a nodejs project so you need to have nodejs installed on your machine. f
 3. run `npm install`  in terminal to install all the dependencies
 4. create .env file in the root of the project and add the following
 ```bash
-# ENV be prod or dev prod will send logs to logtail and save locally dev will only save locally
+# ENV can be prod or dev prod will send logs to logtail and save locally dev will only save locally
 LOCATION_ENV=prod
 #your log token from logtail
 LOG_Token=
