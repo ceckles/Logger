@@ -26,3 +26,13 @@ I used logtail for the real time log processing:
 5. Copy the token and paste it in the .env file
 5. Click live tail button to view incoming logs.
 [logtail](https://betterstack.com/logtail)
+
+# Docker
+Build docker image
+```bash
+docker build . -t <dockerusername>/logger 
+```
+Run docker image
+```bash
+docker run -d <dockerusername>/logger
+```
