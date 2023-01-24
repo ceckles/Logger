@@ -21,12 +21,12 @@ const devLogger = () => {
       format: combine(colorize(),timestamp({ format: "YYYY:MM:DD:HH:MM:SS" }), myFormat),
     },
     error: {
-      filename: "error.log",
+      filename: "logs/error.log",
       level: "error",
       format: combine(timestamp({ format: "YYYY:MM:DD:HH:MM:SS" }),myFormat),
     },
     allErrors: {
-      filename: "combinedLog.log",
+      filename: "logs/combinedLog.log",
       defaultMeta: { service: "user-service" },
       level: "debug",
       format: combine(timestamp({ format: "YYYY:MM:DD:HH:MM:SS" }), myFormat),
