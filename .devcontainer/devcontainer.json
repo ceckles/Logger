@@ -3,12 +3,12 @@
 {
 	"name": "Logger",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+	//"image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
 	
 	//TODO: Not working could not get working dir
-	// "build":{
-	// 	"dockerfile":"Dockerfile"
-	// }
+	"build":{
+		"dockerfile":"Dockerfile"
+	}
 
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
