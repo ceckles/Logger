@@ -3,7 +3,7 @@ const winston = require("winston");
 const { createLogger, format, transports } = require("winston");
 const { combine, timestamp, printf, colorize, json } = format;
 
-const prodLogger = () => {
+const devLogger = () => {
 
   const myFormat = printf(({ level, message, timestamp }) => {
     return `${timestamp} : ${level} : ${message}`;
@@ -16,12 +16,12 @@ const prodLogger = () => {
       format: combine(colorize(),timestamp({ format: "YYYY:MM:DD:HH:MM:SS" }), myFormat),
     },
     error: {
-      filename: "error.log",
+      filename: "logs/error.log",
       level: "error",
       format: combine(timestamp({ format: "YYYY:MM:DD:HH:MM:SS" }),myFormat),
     },
     allErrors: {
-      filename: "combinedLog.log",
+      filename: "logs/combinedLog.log",
       defaultMeta: { service: "user-service" },
       level: "debug",
       format: combine(timestamp({ format: "YYYY:MM:DD:HH:MM:SS" }), myFormat),
@@ -40,4 +40,4 @@ const prodLogger = () => {
   }));
 };
 
-module.exports = prodLogger;
+module.exports = devLogger;

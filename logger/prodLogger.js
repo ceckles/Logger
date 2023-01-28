@@ -7,7 +7,7 @@ const { LogtailTransport } = require('@logtail/winston');
 require('dotenv').config()
 
 
-const devLogger = () => {
+const prodLogger = () => {
   let logtail = new Logtail(`${process.env.LOG_Token}`);
 
   const myFormat = printf(({ level, message, timestamp, label }) => {
@@ -29,7 +29,7 @@ const devLogger = () => {
       filename: "logs/combinedLog.log",
       defaultMeta: { service: "user-service" },
       level: "debug",
-      format: combine(timestamp({ format: "YYYY:MM:DD:HH:MM:SS" }), myFormat),
+      format: combine(timestamp({ format: "YYYY:MM:DD:HH:MM:SS" }), json()),
     },
     logtail:{
 
@@ -53,4 +53,4 @@ const devLogger = () => {
   });
 };
 
-module.exports = devLogger;
+module.exports = prodLogger;
